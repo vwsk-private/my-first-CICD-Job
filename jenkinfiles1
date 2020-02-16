@@ -1,0 +1,24 @@
+pipeline
+	{	
+		agent any
+			{
+				stages 
+				{
+					stage ('print cloning')
+					{
+						steps {
+								sh 'echo cloning'
+								
+								}
+					 stage ('print test')
+					 {
+						steps {
+								sh 'echo test'
+								}
+					 stage ('print build')
+						 steps {
+								sh 'echo build'
+					}			
+				}				
+			}
+	}		
