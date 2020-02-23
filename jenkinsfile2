@@ -1,0 +1,12 @@
+parallel
+  { 
+    stage ('deploy to vm1')
+      {
+        steps {sh 'echo deploy on windows'}
+    stage ('deploy to vm2')
+      {
+        steps {sh 'echo deploy on linux'}
+        }
+       } 
+      }
+     } 
